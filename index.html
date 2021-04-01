@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance D3 Bubble Chart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        svg {
+            background-color: whitesmoke;
+            display: block;
+            margin: 0 auto;
+        }
+        h1 { margin-bottom: 2rem;}
+        h3 {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+        .container {
+            max-width: 48rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Transactions Bubble Chart</h1>
+        <p>You'll need a <strong>local web server</strong> to make this work.</p>
+        <ul>
+            <li><strong>Python 3:</strong><code>python3 -m http.server</code></li>
+        </ul>
+        <p>Then visit 
+            <a href="http://localhost:8000/">http://localhost:8000/</a> to see visualization.
+        </p>
+        <button id="type-split">Type Split</button>
+        <button id="combine">Combine</button>
+
+        <div id="chart"></div>
+
+        <!-- D3 graphing library goes here -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.6.2/d3.min.js"></script>
+        <!-- Actual visualization goes here -->
+        <script src="d3BubbleChart.js"></script>
+    </div>
+</body>
+</html>
